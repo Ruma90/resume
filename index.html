@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Afroja Akter Ruma | Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --charcoal: #2a2622;
+      --clay: #cf9873;
+      --clay-dark: #a9693f;   /* darker clay so small text stays readable on white */
+      --stone: #8b877e;
+      --line: #e2dbd0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Inter", Arial, sans-serif;
+      background: #3a3632;
+      color: var(--charcoal);
+      font-size: 13px;
+      line-height: 1.5;
+      padding: 24px 12px 48px;
+    }
+
+    /* Toolbar (hidden when printing) */
+    .toolbar {
+      max-width: 820px;
+      margin: 0 auto 16px;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .toolbar a, .toolbar button {
+      font-family: inherit;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 999px;
+      padding: 9px 20px;
+      border: 1px solid var(--clay);
+      background: transparent;
+      color: #faf6f0;
+    }
+    .toolbar button { background: var(--clay); color: var(--charcoal); }
+    .toolbar a:hover { background: rgba(207,152,115,.2); }
+
+    /* Paper */
+    .paper {
+      max-width: 820px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 48px 56px;
+      box-shadow: 0 10px 40px rgba(0,0,0,.35);
+    }
+
+    h1 {
+      font-size: 34px;
+      font-weight: 700;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+      line-height: 1.15;
+    }
+    .role {
+      color: var(--clay-dark);
+      font-size: 15px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+    .contact { margin-top: 10px; color: #55504a; font-size: 12px; }
+    .contact a, .links a { color: var(--clay-dark); text-decoration: none; }
+    .contact a:hover, .links a:hover { text-decoration: underline; }
+    .links { margin-top: 2px; font-size: 12px; color: #55504a; }
+    .sep { margin: 0 8px; color: var(--stone); }
+
+    hr { border: 0; border-top: 2px solid var(--clay); margin: 14px 0 6px; }
+
+    h2 {
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .4px;
+      margin: 16px 0 6px;
+    }
+    p { color: #3d3833; }
+
+    .skills { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 28px; padding-left: 12px; }
+    .skills b { color: var(--charcoal); }
+
+    .item { margin-bottom: 8px; }
+    .item .title { font-weight: 700; }
+    .item .title a { font-weight: 400; color: var(--clay-dark); text-decoration: none; }
+    .item .title a:hover { text-decoration: underline; }
+    .tech { color: var(--stone); }
+
+    ul { padding-left: 18px; }
+    li { margin-bottom: 2px; color: #3d3833; }
+
+    .footer-line {
+      border-top: 1px solid var(--line);
+      margin-top: 18px;
+      padding-top: 6px;
+      font-size: 11px;
+      color: var(--stone);
+    }
+    .footer-line a { color: var(--clay-dark); text-decoration: none; }
+
+    @media (max-width: 640px) {
+      .paper { padding: 28px 20px; }
+      h1 { font-size: 26px; }
+      .skills { grid-template-columns: 1fr; padding-left: 0; }
+    }
+
+    @media print {
+      body { background: #fff; padding: 0; }
+      .toolbar { display: none; }
+      .paper { box-shadow: none; max-width: none; padding: 0; }
+      @page { margin: 16mm; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="toolbar">
+    <a href="http://127.0.0.1:5500">← Back to portfolio</a>
+    <button onclick="window.print()">Download PDF</button>
+  </div>
+
+  <main class="paper">
+
+    <h1>Afroja Akter Ruma</h1>
+    <p class="role">CSE Student | Aspiring Web Developer</p>
+
+    <p class="contact">
+      +880 1616257497 <span class="sep">|</span>
+      <a href="mailto:ruma240868@gmail.com">ruma240868@gmail.com</a> <span class="sep">|</span>
+      Kapasgola , Chawkbazar , Chittagong <span class="sep">|</span>
+    </p>
+    
+    <p class="links">
+      <a href="https://www.linkedin.com/in/afroja-ruma-33563132b/" target="_blank" rel="noopener">LinkedIn</a>
+      <span class="sep">|</span>
+      <a href="https://github.com/Ruma90" target="_blank" rel="noopener">GitHub</a>
+      <span class="sep">|</span>
+      <a href="https://ruma90.github.io/personal-portfolio/">Portfolio</a>
+    </p>
+
+    <hr>
+
+    <h2>Career Objective</h2>
+    <p>
+      Motivated Computer Science and Engineering student seeking an opportunity to apply my web development skills in a professional environment. Experienced in building responsive web projects and eager to learn new technologies, contribute to collaborative teams, and grow as a software developer.
+    </p>
+
+    <h2>Technical Skills</h2>
+    <div class="skills">
+      <p><b>Web:</b> HTML, CSS, Tailwind CSS, JavaScript, React</p>
+      <p><b>Tools:</b> Git, GitHub, VS Code</p>
+      <p><b>Programming / ML:</b> Python, Introductory machine learning</p>
+      <p><b>Soft skills:</b> Teamwork, communication, problem-solving</p>
+    </div>
+
+    <h2>Projects</h2>
+
+    <div class="item">
+      <p class="title">Smart Attendance System |
+        <a href="https://ruma90.github.io/Face_recognition_attendance_management_system/" target="_blank" rel="noopener">Live Demo</a></p>
+      <p>Face-recognition based attendance app that detects and matches student faces against a stored image database. <span class="tech">Tech: Python, OpenCV.</span></p>
+    </div>
+
+    <div class="item">
+      <p class="title">Hotel Miranda |
+        <a href="https://ruma90.github.io/Hotel-management-system/" target="_blank" rel="noopener">Live Demo</a></p>
+      <p>Single-page hotel website with room listings, a booking date-picker, amenities, a food menu, and a blog section. <span class="tech">Tech: HTML, CSS, JavaScript.</span></p>
+    </div>
+
+    <div class="item">
+      <p class="title">Bank Portfolio |
+        <a href="https://ruma90.github.io/bank-portfolio/bank.html" target="_blank" rel="noopener">Live Demo</a></p>
+      <p>Simple banking web app where users can deposit and withdraw money, with the balance updating instantly. <span class="tech">Tech: HTML, CSS, JavaScript.</span></p>
+    </div>
+
+    <div class="item">
+      <p class="title">Personal Portfolio |
+        <a href="https://ruma90.github.io/personal-portfolio/">Live Portfolio</a></p>
+      <p>Responsive portfolio with dark mode, project search and filters, and a validated contact form. <span class="tech">Tech: HTML, Tailwind CSS, JavaScript.</span></p>
+    </div>
+
+    <h2>Education</h2>
+    
+    <p><b>B.Sc. in Computer Science and Engineering (CSE)</b></p>
+    <p>International Islamic University Chittagong, Bangladesh</p>
+
+    
+    <p class="footer-line">Portfolio: <a href="https://ruma90.github.io/resume/">Afroja Akter Ruma | Portfolio</a></p>
+  </main>
+
+</body>
+</html>
